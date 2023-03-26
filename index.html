@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="js/script.js" type="module" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <span class="balance"></span>
+    <section class="action-section">
+     
+        <form class="deposit-form">
+            <div class="input-group">
+                <input type="number" class="form-control deposit-input" placeholder="Deposit amount">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="submit">Deposit</button>
+                </div>
+              </div>
+        </form>
+
+        <form class="withdraw-form">
+            <div class="input-group mb-3">
+                <input type="number" class="form-control withdraw-input" placeholder="Withdraw amount"  aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="submit">Withdraw</button>
+                </div>
+              </div>
+        </form>
+
+        <select class="form-select select-action" aria-label="Default select example">
+            <option selected>Actions</option>
+            <option value="card-to-card">Card to card</option>
+            <option value="credit">Credit</option>
+            <option value="light">Light</option>
+          </select>
+
+        <form class="card-to-card-form actions-form">
+            <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control card-name" placeholder="Name and surname">
+                </div>
+                <div class="col">
+                  <input type="number" class="form-control card-amount" placeholder="How much do you want do send?">
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary card-button col-md-12">Send</button>
+        </form>
+
+        <form class="credit-form actions-form">
+            <div class="form-group">
+                <label class="credit-debt" for="formGroupExampleInput"></label>
+                <input type="number" class="form-control credit-input" id="formGroupExampleInput" placeholder="How much do you want to pay">
+              </div>
+              <button type="submit" class="btn btn-primary card-button col-md-1">Pay</button>
+        </form>
+
+        <form class="light-form actions-form">
+            <div class="form-group">
+                <label class="light-debt" for="formGroupExampleInput"></label>
+                <input type="number" class="form-control light-input" id="formGroupExampleInput" placeholder="How much do you want to pay">
+              </div>
+              <button type="submit" class="btn btn-primary card-button col-md-1">Pay</button>
+        </form>
+
+    </section>
+</body>
+</html>

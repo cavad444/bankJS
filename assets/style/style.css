@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+.balance {
+  font-size: 28px;
+  padding: 20px;
+}
+
+.action-section {
+  width: 1440px;
+  margin: 0 auto;
+  padding-top: 200px;
+}
+
+.deposit-form {
+  margin-bottom: 21px;
+}
+
+.card-to-card-form {
+  margin-top: 20px;
+}
+.card-to-card-form .card-button {
+  margin-top: 10px;
+}
+
+.actions-form {
+  margin-top: 20px;
+}/*# sourceMappingURL=style.css.map */
